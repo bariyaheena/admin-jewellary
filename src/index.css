@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'DM Sans', sans-serif !important;
+		font-feature-settings: 'kern' !important;
+		-webkit-font-smoothing: antialiased;
+		letter-spacing: -0.5px;
+	}
+}
+.darkMode{
+	background-image: url('assets/img/background.png') !important;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+/* ------------------for all dashboard boxes ------------------------- */
+.weekly{
+	border: 1px solid goldenrod;
+}
+.weekly:hover{
+	background-color: rgba(218,165,32, 0.2)!important;
+}
+
+
+/* input box */
+input.defaultCheckbox::before {
+	content: url(../src/assets/svg/checked.svg); 
+	color: white;
+	opacity: 0; 
+	height: 16px; 
+	width: 16px;
+	position: absolute; 
+	left: 50%;
+	transform: translate(-50%, 0px);
+} 
+
+input:checked.defaultCheckbox::before { 
+	opacity: 1;
+}
+
+/* hero table */
+.Hero-table Tr{
+	background-color:  rgba(255, 255, 255, 0.1) !important;
+	border: 2px solid white;
+	padding: 20px;}
+
+/* body.dark .Hero-table Tr:nth-child(odd) {
+	background-color: lightgreen !important;
+ } */
+
+ .Hero-table Th{
+	background-color: #fedd43 !important;
+	
+}
+ .pivoted{
+	color: white !important;
+	/* background-color: red; */
+	background-color:  rgb(8, 17, 46) !important;
+}
+ .Hero-table Tr:hover{
+	background-color: #fedd43 !important;
+}
+.Hero-td{
+	background-color: red;
+}
+
+/* product table */
+.check {
+	-webkit-appearance: none; /*hides the default checkbox*/
+	height: 20px;
+	width: 20px;
+  transition: 0.10s;
+   border :1px solid white;
+	text-align: center;
+	font-weight: 600;
+	border-radius: 3px;
+	outline: none;
+  }
+  
+  .check:checked {
+	background-color: #0E9700;
+  }
+  
+  .check:checked:before {
+	content: "✔";
+  }
+  
+  .check:hover {
+	cursor: pointer; 
+	opacity: 0.8;
+  }
+  .festival-btn{
+	border-radius: 40px !important;
+}
+.btn-success{
+	border-radius: 40px !important;
+}
+.btn-danger{
+	border-radius: 40px !important;
+}
+.add-produc-btn{
+	float: right;
+}
+.add-categories-btn {
+	float: right;
+}
+.product-btn{
+background-color: blue;
+
+}
+
+
+/* ----------------------------side navbar--------------------------------------------- */
+.search-input{
+	border:  2px solid white !important;
+}
+.sidenavbar:hover{
+	color: white !important;
+	border: 0.5px solid goldenrod !important;
+	box-shadow: 0px 0px 100px 1px gold !important;
+	border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+
+.default{
+
+color: rgb(255, 0, 0) !important;
+}
+
+
+.profile	{
+color: rgb(247, 163, 6) !important; }
+
+
+.hero{
+color:rgb(0, 245, 192) !important;	
+}
+
+.category{
+	color: rgb(255, 141, 141) !important;
+}
+
+
+.product{
+	color: rgb(247, 6, 187) !important;
+}
+
+
+.festival{
+	color:rgb(253, 149, 14) !important;;
+}
+.order{
+	color: rgb(255, 0, 0) !important;
+}
+.customer{
+	color: rgb(11, 155, 252) !important;
+}
+.review{
+	color:rgb(253, 149, 14) !important;
+}
+
+.coupan	{
+	color: rgba(255, 0, 0, 0.5) !important;
+}
+.payment{
+	color: rgb(231, 69, 236) !important;
+}
+.calender{
+	color:rgb(253, 149, 14) !important;
+}
+.invoice{
+	color: rgb(204, 0, 255) !important;
+}
+.stock{
+	color: rgb(224, 155, 65) !important;
+}
+/*  --------------------------------- top widget box---------------------------------------  */
+/* ----dark mode css--- */
+ .widget{
+	padding: 18px;
+	border-top: 2px solid;
+
+	background-image: linear-gradient(to right,   #fedd43 8%, 	rgb(46, 46, 70));
+	transition: all 0.6s;
+}
+
+ .widget:hover{
+	background-image: linear-gradient(to right,   #070706 8%, 	rgb(46, 46, 70));
+	transform: scale(1.2) rotate(5deg);
+}
+.widget1:hover{
+	background-image: linear-gradient(to right,   #070706 8%, 	rgb(46, 46, 70));
+	background-image: linear-gradient(to right,   #070706 8%, 	rgb(46, 46, 70));
+	transform: scale(1.2) rotate(5deg);
+}
+.widget2:hover{
+	background-image: linear-gradient(to right,   #070706 8%, 	rgb(46, 46, 70));
+	
+	transform: scale(1.2) rotate(5deg);
+}
+.widget3:hover{
+	background-image: linear-gradient(to right,   #070706 8%, 	rgb(46, 46, 70));
+	
+	transform: scale(1.2) rotate(5deg);
+}
+
+
+ .widget1{
+	padding: 18px;
+	border-top: 2px solid;
+	background-image: linear-gradient(to right,   #11F98C 8%, 	rgb(46, 46, 70));
+	transition: all 0.6s;
+
+}
+
+ .widget2{
+	padding: 18px;
+	border-top: 2px solid;
+	/* background-image: linear-gradient(to right,   #90f1b5 0%, 	rgb(46, 46, 70)); */
+	background-image: linear-gradient(to right,   #f3a108 8%, 	rgb(46, 46, 70));
+	transition: all 0.6s;
+
+}
+.widget3{
+	padding: 18px;
+	border-top: 2px solid;
+	/* background-image: linear-gradient(to right,   #90f1b5 0%, 	rgb(46, 46, 70)); */
+	background-image: linear-gradient(to right,   #d84214 8%, 	rgb(46, 46, 70));
+	transition: all 0.6s;
+
+}
+/* ---------------------------------end----------------------------------------- */
+
+
+/*  all table css */
+ .table Tr{
+	background-color: 	rgb(46, 46, 70);
+}
+ .table-head{
+	background-color: darkblue;
+}
+
+/*  all table add button */
+ .btn-dash {
+
+color: white;
+	width: 12vw;
+	border: 1px solid goldenrod;
+	border-radius: 3%;
+	margin: 1vw;
+	background-color: transparent;
+	padding: 10px;
+	transition: 1s;
+	font-size: 1vw;
+	float: right;
+}
+ .btn-dash:hover {
+	background-color: goldenrod;
+	box-shadow: 0px 0px 100px 1px gold;
+}
+.logoimg{
+	padding: 10px;
+}
+
+
+/* -----------profile-------------- */
+
+.profile-page{
+	background-color: black;
+	color: white;
+}
+.chart-icon{
+	border: 1px solid goldenrod;
+	background: transparent;
+}
+.chart-icon:hover{
+	background-color: goldenrod;
+	box-shadow: 0px 0px 100px 1px gold;
+}
